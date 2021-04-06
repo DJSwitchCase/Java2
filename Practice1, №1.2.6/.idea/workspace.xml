@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a1c25f0-6349-48c5-8a8e-1136fb14a66a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Practice 4, №4.4.2/src/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice1, №1.2.15/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice1, №1.2.15/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Practice2, №2.3.8/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice2, №2.3.8/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="2a1c25f0-6349-48c5-8a8e-1136fb14a66a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +70,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../BookShelf" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -107,6 +102,7 @@
       <option name="presentableId" value="Default" />
       <updated>1613479293248</updated>
       <workItem from="1616575762933" duration="715000" />
+      <workItem from="1617210248532" duration="28000" />
     </task>
     <servers />
   </component>
