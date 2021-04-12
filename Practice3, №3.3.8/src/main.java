@@ -67,7 +67,7 @@ public class main {
         one.setName("Thread1");
         Thread two = new myThread2(list);
         two.setName("Thread2");
-        System.out.println("Задание 1:");
+        //System.out.println("Задание 1:");
         //Проверка задания
         //one.start();
         //two.start();
@@ -82,8 +82,8 @@ public class main {
         four.setName("Thread4");
         System.out.println("Задание 2:");
         //Проверка задания
-        //three.start();
-        //four.start();
+        three.start();
+        four.start();
 
 
 
