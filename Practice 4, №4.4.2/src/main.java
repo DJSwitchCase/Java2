@@ -22,20 +22,20 @@ public class main {
     public static void main(String[] args) throws Exception {
         ExecutorService es = Executors.newFixedThreadPool(3);
         //1) add (invokeAll, invokeAny)
-//        List<myCallable> list = new ArrayList<>();
-//        for (int i = 0; i<3; i++)
-//            list.add(new myCallable());
-//
-//        List<Future<Integer>> futures = es.invokeAll(list); //запускаем все потоки, ждём их завершения !!ИЛИ!!
-//        //System.out.println(es.invokeAny(list)); //запускаем все потоки, ждём завершения хотя бы одного, остальные пытаемся вырубить cancel()'ом, переходим к следующей операции
+        List<myCallable> list = new ArrayList<>();
+        for (int i = 0; i<3; i++)
+            list.add(new myCallable());
+
+        List<Future<Integer>> futures = es.invokeAll(list); //запускаем все потоки, ждём их завершения !!ИЛИ!!
+        //System.out.println(es.invokeAny(list)); //запускаем все потоки, ждём завершения хотя бы одного, остальные пытаемся вырубить cancel()'ом, переходим к следующей операции
 
         //2) submit (get(), isDone())
-        Future<Integer> sub = es.submit((Callable<Integer>) () -> {
-            System.out.println("Started: " + Thread.currentThread().getId());
-            Thread.sleep(4000);
-            System.out.println("Finished: " + Thread.currentThread().getId());
-            return 0;
-        });
+//        Future<Integer> sub = es.submit((Callable<Integer>) () -> {
+//            System.out.println("Started: " + Thread.currentThread().getId());
+//            Thread.sleep(4000);
+//            System.out.println("Finished: " + Thread.currentThread().getId());
+//            return 0;
+//        });
         //sub.get(); // ждём окончания потока, затем переходим на сл. операцию
 
 //        while (!sub.isDone())
