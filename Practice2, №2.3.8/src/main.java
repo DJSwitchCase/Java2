@@ -8,7 +8,7 @@ public class main {
 
         //Фильтруем на старших 20
         List<Human> FilteredBy20List = StreamAPI.filterBy20Age(hList);
-       // StreamAPI.printout(FilteredBy20List);
+        //StreamAPI.printout(FilteredBy20List);
 
         //Сортируем по последней букве
         List<Human> SortedByTheLastLetter = StreamAPI.sortByTheLastLetter(hList);

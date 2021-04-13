@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d3321d2-d908-4a88-8320-f0c1de4dcd7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Practice 4, №4.4.2/src/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice 4, №4.4.2/out/production/Practice 4, №4.4.2/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice 4, №4.4.2/out/production/Practice 4, №4.4.2/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice 4, №4.4.2/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice 4, №4.4.2/src/main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practice 2 - zadanie8/StreamAPI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practice 2 - zadanie8/StreamAPI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Practice 2 - zadanie8/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Practice 2 - zadanie8/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice3, №3.3.8/out/production/Practice3, №3.3.8/main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice3, №3.3.8/out/production/Practice3, №3.3.8/main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Practice3, №3.3.8/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Practice3, №3.3.8/src/main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,12 +87,15 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Practice1, №1.2.15" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/GitRepos/BookShelfShop" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
     <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -115,6 +124,9 @@
       <updated>1614094811300</updated>
       <workItem from="1616539435976" duration="1186000" />
       <workItem from="1616575740813" duration="13000" />
+      <workItem from="1616598517623" duration="610000" />
+      <workItem from="1616600905133" duration="192000" />
+      <workItem from="1616666176506" duration="315000" />
     </task>
     <servers />
   </component>
