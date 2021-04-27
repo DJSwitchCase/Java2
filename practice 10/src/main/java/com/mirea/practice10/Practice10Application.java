@@ -20,11 +20,11 @@ public class Practice10Application {
 
         SortingAlgorithm mergeSort = context.getBean(MergeSort.class);
         SortingAlgorithm insertionSort = context.getBean(InsertionSort.class);
-        SortingAlgorithm qucikSort = context.getBean(QuickSort.class);
+        SortingAlgorithm quickSort = context.getBean(QuickSort.class);
 
         mergeSort.doSort();
         insertionSort.doSort();
-        qucikSort.doSort();
+        quickSort.doSort();
     }
 
 }
