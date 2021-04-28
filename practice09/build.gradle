@@ -11,32 +11,33 @@ repositories {
 
 jar {
     manifest {
-        attributes "Main-Class": "ru.mirea.Main"
+        attributes 'Main-Class': 'ru.mirea.Main'
     }
     from {
         configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
     }
     finalizedBy {
-        copyJar
+        moveJar
     }
 }
 
-task copyJar(type: Copy) {
+task moveJar(type: Copy) {
     from jar
     into projectDir
+//    commandLine "mv", "build/libs/practice9-1.0-SNAPSHOT.jar", "./"
     finalizedBy {
-        buildDockerImage
+        dockerBuild
     }
 }
 
-task buildDockerImage(type: Exec) {
+task dockerBuild(type: Exec) {
     workingDir projectDir
     commandLine "docker", "build", "-t", "${project.name}:${project.version}", "."
     finalizedBy {
-        runDockerContainer
+        dockerRun
     }
 }
 
-task runDockerContainer(type: Exec) {
+task dockerRun(type: Exec) {
     commandLine "docker", "run", "${project.name}:${project.version}"
 }
