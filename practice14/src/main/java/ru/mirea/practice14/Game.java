@@ -1,6 +1,11 @@
 package ru.mirea.practice14;
 
 public class Game {
-    private String name;
-    private String creationDate;
+    public String name;
+    public String creationDate;
+
+    public Game(String name, String creationDate) {
+        this.name = name;
+        this.creationDate = creationDate;
+    }
 }

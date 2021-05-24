@@ -12,5 +12,5 @@ public class Practice14Application {
         SpringApplication.run(Practice14Application.class, args);
     }
     AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
-    GameController gc = context
+   // GameController gc = context
 }

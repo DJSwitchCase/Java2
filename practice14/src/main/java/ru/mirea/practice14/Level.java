@@ -1,6 +1,6 @@
 package ru.mirea.practice14;
 
 public class Level {
-    private String levelName;
-    private int complexity;
+    public String levelName;
+    public int complexity;
 }
