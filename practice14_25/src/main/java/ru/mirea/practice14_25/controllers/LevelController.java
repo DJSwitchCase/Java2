@@ -1,19 +1,20 @@
 package ru.mirea.practice14_25.controllers;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
-import ru.mirea.practice14_25.model.Level;
-import ru.mirea.practice14_25.service.LevelService;
+import ru.mirea.practice14_25.model.entity.Level;
+import ru.mirea.practice14_25.model.service.LevelService;
 
 import java.util.List;
 
-@RestController
+@Controller
 @RequestMapping("/levels")
 public class LevelController {
     //List<Level> levels;
-
     //внедряем зависимость от LevelService
     public final LevelService levelService;
     @Autowired
@@ -63,7 +64,7 @@ public class LevelController {
                 : new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
     }
 
-    @DeleteMapping({"id"})
+    @DeleteMapping({"{id}"})
         public ResponseEntity<?> delete(@PathVariable(name = "id") int id){
         final boolean deleted = levelService.delete(id);
 

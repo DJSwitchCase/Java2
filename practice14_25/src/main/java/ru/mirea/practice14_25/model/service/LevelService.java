@@ -1,6 +1,6 @@
-package ru.mirea.practice14_25.service;
+package ru.mirea.practice14_25.model.service;
 
-import ru.mirea.practice14_25.model.Level;
+import ru.mirea.practice14_25.model.entity.Level;
 
 import java.util.List;
 

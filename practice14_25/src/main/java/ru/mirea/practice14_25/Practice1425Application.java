@@ -8,8 +8,8 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @EntityScan("ru.mirea.practice14_25.model")
-//@ComponentScan("ru.mirea.practice14_25.repository")
-//@EnableJpaRepositories("ru.mirea.practice14_25.repository")
+//@ComponentScan("ru.mirea.practice14_25.model.service.repository")
+//@EnableJpaRepositories("ru.mirea.practice14_25.model.service.repository")
 @SpringBootApplication //(exclude = {DataSourceAutoConfiguration.class })
 public class Practice1425Application {
 

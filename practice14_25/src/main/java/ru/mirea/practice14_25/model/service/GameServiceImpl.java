@@ -1,20 +1,17 @@
-package ru.mirea.practice14_25.service;
+package ru.mirea.practice14_25.model.service;
 
 import org.springframework.stereotype.Service;
-import ru.mirea.practice14_25.model.Level;
-import ru.mirea.practice14_25.repository.LevelRepository;
-import ru.mirea.practice14_25.service.LevelService;
+import ru.mirea.practice14_25.model.service.GameService;
+import ru.mirea.practice14_25.model.entity.Game;
+import ru.mirea.practice14_25.model.repository.GameRepository;
 
 import java.util.List;
 
 @Service
-public
-class LevelServiceImpl implements LevelService {
-
-    public final LevelRepository levelRepository;
-
-    public LevelServiceImpl(LevelRepository levelRepository) {
-        this.levelRepository = levelRepository;
+public class GameServiceImpl implements GameService {
+    public final GameRepository gameRepository;
+    public GameServiceImpl(GameRepository gameRepository) {
+        this.gameRepository = gameRepository;
     }
     // Хранилище клиентов
     ///private static final Map<Integer, Level> LEVEL_REPOSITORY_MAP = new HashMap<>();
@@ -22,32 +19,32 @@ class LevelServiceImpl implements LevelService {
     ///private static final AtomicInteger LEVEL_ID_HOLDER = new AtomicInteger();
 
     @Override
-    public void create(Level level) {
+    public void create(Game game) {
         ///    final int levelId = LEVEL_ID_HOLDER.incrementAndGet();
         ///    level.setId(levelId);
         ///    LEVEL_REPOSITORY_MAP.put(levelId, level);
-        levelRepository.save(level);
+        gameRepository.save(game);
     }
 
     @Override
-    public List<Level> readAll() {
+    public List<Game> readAll() {
         ///return new ArrayList<>(LEVEL_REPOSITORY_MAP.values());
-        return levelRepository.findAll();
+        return gameRepository.findAll();
     }
 
     @Override
-    public Level read(int id) {
+    public Game read(int id) {
         ///return LEVEL_REPOSITORY_MAP.get(id);
-        return levelRepository.getById(id);
+        return gameRepository.getById(id);
     }
 
     @Override
-    public boolean update(Level level, int id) {
+    public boolean update(Game game, int id) {
         ///if (LEVEL_REPOSITORY_MAP.containsKey(id)){
-        if (levelRepository.existsById(id)) {
-            level.setId(id);
+        if (gameRepository.existsById(id)) {
+            game.setId(id);
             ///LEVEL_REPOSITORY_MAP.put(id, level);
-            levelRepository.save(level);
+            gameRepository.save(game);
             return true;
         }
         return false;
@@ -56,8 +53,8 @@ class LevelServiceImpl implements LevelService {
     @Override
     public boolean delete(int id) {
         ///return LEVEL_REPOSITORY_MAP.remove(id) != null;
-        if (levelRepository.existsById(id)) {
-            levelRepository.deleteById(id);
+        if (gameRepository.existsById(id)) {
+            gameRepository.deleteById(id);
             return true;
         }
         return false;

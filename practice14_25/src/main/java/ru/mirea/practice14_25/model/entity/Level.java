@@ -1,4 +1,4 @@
-package ru.mirea.practice14_25.model;
+package ru.mirea.practice14_25.model.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -16,13 +16,17 @@ public class Level {
     public Integer id;
 
     @Column(name = "name")
-    public String levelName;
+    public String name;
+
+    @ManyToOne(fetch = FetchType.EAGER)
+    @JoinColumn(name = "game_id")
+    public Game game_id;
 
     @Column(name = "complexity")
     public int complexity;
 
     public Level(String levelName, int complexity) {
-        this.levelName = levelName;
+        this.name = levelName;
         this.complexity = complexity;
     }
 
@@ -30,12 +34,12 @@ public class Level {
 
     }
 
-    public String getLevelName() {
-        return levelName;
+    public String getName() {
+        return name;
     }
 
-    public void setLevelName(String levelName) {
-        this.levelName = levelName;
+    public void setName(String levelName) {
+        this.name = levelName;
     }
 
     public int getComplexity() {
