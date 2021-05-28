@@ -6,9 +6,11 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import ru.mirea.practice14_25.model.entity.Game;
 import ru.mirea.practice14_25.model.entity.Level;
 import ru.mirea.practice14_25.model.service.LevelService;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -44,6 +46,17 @@ public class LevelController {
                 ? new ResponseEntity<>(levels, HttpStatus.OK)
                 : new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
+
+    @GetMapping("/sort")
+    public ResponseEntity<?> sort() {
+        final List<Level> sorted = (List<Level>) levelService.sort();
+        System.out.println(sorted);
+//        return sorted;
+        return sorted != null
+                ? new ResponseEntity<>(sorted, HttpStatus.OK)
+                : new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
+    }
+
     //новое. Получение по id
     @GetMapping("/{id}")
     public ResponseEntity<Level> read(@PathVariable(name = "id") int id) {

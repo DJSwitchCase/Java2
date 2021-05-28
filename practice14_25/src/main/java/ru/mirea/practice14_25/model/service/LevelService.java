@@ -10,4 +10,5 @@ public interface LevelService {
     Level read(int id);
     boolean update(Level level, int id);
     boolean delete(int id);
+    List<Level> sort();
 }

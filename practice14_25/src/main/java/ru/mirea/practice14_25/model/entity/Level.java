@@ -1,10 +1,12 @@
 package ru.mirea.practice14_25.model.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.AllArgsConstructor;
 
 import javax.persistence.*;
 
 @Entity
+@AllArgsConstructor
 @Table(name = "levels")
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Level {
@@ -18,17 +20,19 @@ public class Level {
     @Column(name = "name")
     public String name;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "game_id")
     public Game game_id;
 
     @Column(name = "complexity")
     public int complexity;
 
-    public Level(String levelName, int complexity) {
-        this.name = levelName;
-        this.complexity = complexity;
-    }
+//    public Level(Integer id, String name, Game game_id, int complexity) {
+//        this.id = id;
+//        this.name = name;
+//        this.game_id = game_id;
+//        this.complexity = complexity;
+//    }
 
     public Level() {
 

@@ -9,4 +9,5 @@ public interface GameService {
         Game read(int id);
         boolean update(Game game, int id);
         boolean delete(int id);
-    }
+        List<Game> sort();
+}

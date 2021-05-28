@@ -1,10 +1,17 @@
 package ru.mirea.practice14_25.model.service;
 
 import org.springframework.stereotype.Service;
+import ru.mirea.practice14_25.model.entity.Game;
 import ru.mirea.practice14_25.model.service.LevelService;
 import ru.mirea.practice14_25.model.entity.Level;
 import ru.mirea.practice14_25.model.repository.LevelRepository;
 
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Root;
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -12,7 +19,18 @@ public
 class LevelServiceImpl implements LevelService {
 
     public final LevelRepository levelRepository;
+    @PersistenceContext
+    EntityManager em;
 
+    public List<Level> sort() {
+        CriteriaBuilder cb = em.getCriteriaBuilder();
+        CriteriaQuery<Level> levelCriteriaQuery = cb.createQuery(Level.class);
+        Root<Level> root = levelCriteriaQuery.from(Level.class);
+        levelCriteriaQuery.select(root).orderBy(cb.asc(root.get("id")));
+        //Query<Game> query = (Query<Game>) em.createQuery(gameCriteriaQuery);
+        return (List<Level>) em.createQuery(levelCriteriaQuery).getResultList();
+
+    }
     public LevelServiceImpl(LevelRepository levelRepository) {
         this.levelRepository = levelRepository;
     }

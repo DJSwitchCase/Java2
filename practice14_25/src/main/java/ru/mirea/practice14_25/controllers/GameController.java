@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import ru.mirea.practice14_25.model.entity.Game;
 import ru.mirea.practice14_25.model.service.GameService;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -16,46 +17,49 @@ public class GameController {
     //List<Level> levels;
     //внедряем зависимость от LevelService
     public final GameService gameService;
+
     @Autowired
-    public GameController(GameService gameService)
-    {
+    public GameController(GameService gameService) {
         this.gameService = gameService;
     }
 
     //create
     @PostMapping
-    public ResponseEntity<?> create(@RequestBody Game game){
+    public ResponseEntity<?> create(@RequestBody Game game) {
         gameService.create(game);
         return new ResponseEntity<>(HttpStatus.CREATED);
     }
+
     @GetMapping("/hi")
     @ResponseBody
-    public String sayHello(){
+    public String sayHello() {
         return "hello";
     }
+
     @GetMapping
 //    public List<Level> getLevels() {
 //        return levels;}
     //read
-    public ResponseEntity<List<Game>> read(){
+    public ResponseEntity<List<Game>> read() {
         final List<Game> games = gameService.readAll();
         return games != null && !games.isEmpty()
                 ? new ResponseEntity<>(games, HttpStatus.OK)
                 : new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
+
     //новое. Получение по id
     @GetMapping("/{id}")
     public ResponseEntity<Game> read(@PathVariable(name = "id") int id) {
         final Game game = gameService.read(id);
 
         return game != null
-                ? new ResponseEntity<>(game,HttpStatus.OK)
+                ? new ResponseEntity<>(game, HttpStatus.OK)
                 : new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
     //update
     @PutMapping("{id}")
-    public ResponseEntity<?> update(@PathVariable(name = "id")int id, @RequestBody Game game){
+    public ResponseEntity<?> update(@PathVariable(name = "id") int id, @RequestBody Game game) {
         final boolean updated = gameService.update(game, id);
 
         return updated
@@ -64,11 +68,21 @@ public class GameController {
     }
 
     @DeleteMapping({"{id}"})
-    public ResponseEntity<?> delete(@PathVariable(name = "id") int id){
+    public ResponseEntity<?> delete(@PathVariable(name = "id") int id) {
         final boolean deleted = gameService.delete(id);
 
         return deleted
                 ? new ResponseEntity<>(HttpStatus.OK)
+                : new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
+    }
+
+    @GetMapping("/sort")
+    public ResponseEntity<?> sort() {
+        final ArrayList<Game> sorted = (ArrayList<Game>) gameService.sort();
+        System.out.println(sorted);
+//        return sorted;
+        return sorted != null
+                ? new ResponseEntity<>(sorted, HttpStatus.OK)
                 : new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
     }
 //    @GetMapping("/del")
