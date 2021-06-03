@@ -79,7 +79,6 @@ public class GameController {
     @GetMapping("/sort")
     public ResponseEntity<?> sort() {
         final ArrayList<Game> sorted = (ArrayList<Game>) gameService.sort();
-        System.out.println(sorted);
 //        return sorted;
         return sorted != null
                 ? new ResponseEntity<>(sorted, HttpStatus.OK)
