@@ -14,3 +14,4 @@ CREATE TABLE IF NOT EXISTS games(
     name varchar(200) NOT NULL,
     date varchar(200) NOT NULL
 );
+

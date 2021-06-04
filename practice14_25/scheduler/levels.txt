@@ -1,7 +1,1 @@
 id|name|complexity
-1|SubLevel|6
-3|Ocean|8
-2|lava|8
-4|lava3|8
-5|Divinity Original Sin 4 level|10
-6|Divinity Original Sin 4 level|10
