@@ -43,7 +43,8 @@ public class main {
         //Лаконичная имплементация через лямбда-функцию
         Comparator<Student> com = (o1, o2) -> (o1.getScore()>o2.getScore())? -1 : 1;
 
-        classroom.sort(com);
+        //classroom.sort(com);
+        Collections.sort(classroom, com);
 
         for (Student i: classroom)
             System.out.println(i.getName());

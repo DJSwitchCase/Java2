@@ -34,7 +34,7 @@ public class HomeController {
         System.out.println(userFromDB);
         System.out.println("Privet1");
          if (userFromDB != null){
-            System.out.println("Privet2");
+            System.out.println("User exists!");
             model.put("hey", "User exists!");
             return "registration";
         }
@@ -43,7 +43,7 @@ public class HomeController {
         user.setRoles(Collections.singleton(Role.USER));
         userRepository.save(user);
 
-        return "redirect:/";
+        return "redirect:/login";
     }
 //
 //    @GetMapping("/login")

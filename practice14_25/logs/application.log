@@ -8,230 +8,49 @@ OpenJDK 64-Bit Server VM warning: Options -Xverify:none and -noverify were depre
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::                (v2.5.0)
 
-2021-06-04 17:21:48.174  INFO 10844 --- [  restartedMain] r.m.p.Practice1425Application            : Starting Practice1425Application using Java 15.0.1 on DESKTOP-31L6BV3 with PID 10844 (C:\Users\light\OneDrive\Документы\GitHub\Java2\practice14_25\target\classes started by light in C:\Users\light\OneDrive\Документы\GitHub\Java2\practice14_25)
-2021-06-04 17:21:48.176  INFO 10844 --- [  restartedMain] r.m.p.Practice1425Application            : No active profile set, falling back to default profiles: default
-2021-06-04 17:21:48.220  INFO 10844 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2021-06-04 17:21:48.220  INFO 10844 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2021-06-04 17:21:48.233  WARN 10844 --- [kground-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
-2021-06-04 17:21:48.783  INFO 10844 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2021-06-04 17:21:48.837  INFO 10844 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 3 JPA repository interfaces.
-2021-06-04 17:21:49.395  INFO 10844 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2021-06-04 17:21:49.402  INFO 10844 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2021-06-04 17:21:49.402  INFO 10844 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
-2021-06-04 17:21:49.469  INFO 10844 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2021-06-04 17:21:49.469  INFO 10844 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1249 ms
-2021-06-04 17:21:49.612  INFO 10844 --- [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2021-06-04 17:21:49.639  INFO 10844 --- [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
-2021-06-04 17:21:49.708  INFO 10844 --- [  restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2021-06-04 17:21:49.770  INFO 10844 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2021-06-04 17:21:49.975  INFO 10844 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2021-06-04 17:21:49.984  INFO 10844 --- [  restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
-2021-06-04 17:21:50.456  INFO 10844 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2021-06-04 17:21:50.462  INFO 10844 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2021-06-04 17:21:50.514  WARN 10844 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2021-06-04 17:21:50.972  WARN 10844 --- [  restartedMain] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
-2021-06-04 17:21:51.120  INFO 10844 --- [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@548e5733, org.springframework.security.web.context.SecurityContextPersistenceFilter@7ac2056f, org.springframework.security.web.header.HeaderWriterFilter@39f4979b, org.springframework.security.web.csrf.CsrfFilter@15f64b28, org.springframework.security.web.authentication.logout.LogoutFilter@7d411406, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2a84956b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@45d618c1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@74ab2985, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2c07cf37, org.springframework.security.web.session.SessionManagementFilter@5bd27c95, org.springframework.security.web.access.ExceptionTranslationFilter@6dbca7b7, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5a4520db]
-2021-06-04 17:21:51.497  INFO 10844 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2021-06-04 17:21:51.531  INFO 10844 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2021-06-04 17:21:51.544  INFO 10844 --- [  restartedMain] r.m.p.Practice1425Application            : Started Practice1425Application in 3.681 seconds (JVM running for 4.251)
-2021-06-04 17:21:51.545  INFO 10844 --- [  restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state LivenessState changed to CORRECT
-2021-06-04 17:21:51.547  INFO 10844 --- [  restartedMain] o.s.b.a.ApplicationAvailabilityBean      : Application availability state ReadinessState changed to ACCEPTING_TRAFFIC
-2021-06-04 17:21:58.676  INFO 10844 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-06-04 17:21:58.676  INFO 10844 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2021-06-04 17:21:58.677  INFO 10844 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2021-06-04 17:22:00.013  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task started at 04-06-2021 17:22:00
-2021-06-04 17:22:00.015  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-04 17:22:00.016  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-04 17:22:00.025  INFO 10844 --- [   scheduling-1] r.m.p.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 69 milliseconds. Return: []
-2021-06-04 17:22:00.096  INFO 10844 --- [   scheduling-1] r.m.p.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 5 milliseconds. Return: []
-2021-06-04 17:22:00.100  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 91 milliseconds.
-null
-Privet1
-Privet3
-2021-06-04 17:23:00.005  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task started at 04-06-2021 17:23:00
-2021-06-04 17:23:00.006  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-04 17:23:00.007  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-04 17:23:00.009  INFO 10844 --- [   scheduling-1] r.m.p.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 17:23:00.011  INFO 10844 --- [   scheduling-1] r.m.p.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 17:23:00.012  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 8 milliseconds.
-2021-06-04 17:24:00.009  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task started at 04-06-2021 17:24:00
-2021-06-04 17:24:00.011  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-04 17:24:00.011  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-04 17:24:00.013  INFO 10844 --- [   scheduling-1] r.m.p.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 17:24:00.015  INFO 10844 --- [   scheduling-1] r.m.p.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 17:24:00.017  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 8 milliseconds.
-2021-06-04 17:25:00.004  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task started at 04-06-2021 17:25:00
-2021-06-04 17:25:00.005  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-04 17:25:00.006  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-04 17:25:00.007  INFO 10844 --- [   scheduling-1] r.m.p.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 2 milliseconds. Return: []
-2021-06-04 17:25:00.010  INFO 10844 --- [   scheduling-1] r.m.p.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 17:25:00.012  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 8 milliseconds.
-2021-06-04 17:26:00.008  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task started at 04-06-2021 17:26:00
-2021-06-04 17:26:00.010  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-04 17:26:00.010  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-04 17:26:00.012  INFO 10844 --- [   scheduling-1] r.m.p.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 0 milliseconds. Return: []
-2021-06-04 17:26:00.014  INFO 10844 --- [   scheduling-1] r.m.p.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 17:26:00.015  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 8 milliseconds.
-null
-Privet1
-Privet3
-2021-06-04 17:27:00.004  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task started at 04-06-2021 17:27:00
-2021-06-04 17:27:00.005  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-04 17:27:00.006  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-04 17:27:00.007  INFO 10844 --- [   scheduling-1] r.m.p.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 17:27:00.009  INFO 10844 --- [   scheduling-1] r.m.p.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 2 milliseconds. Return: []
-2021-06-04 17:27:00.011  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 7 milliseconds.
-2021-06-04 17:28:00.007  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task started at 04-06-2021 17:28:00
-2021-06-04 17:28:00.008  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-04 17:28:00.009  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-04 17:28:00.010  INFO 10844 --- [   scheduling-1] r.m.p.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 17:28:00.012  INFO 10844 --- [   scheduling-1] r.m.p.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 17:28:00.013  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 6 milliseconds.
-2021-06-04 17:29:00.009  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task started at 04-06-2021 17:29:00
-2021-06-04 17:29:00.010  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-04 17:29:00.011  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-04 17:29:00.012  INFO 10844 --- [   scheduling-1] r.m.p.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 17:29:00.015  INFO 10844 --- [   scheduling-1] r.m.p.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 17:29:00.017  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 8 milliseconds.
-2021-06-04 18:29:21.673  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task started at 04-06-2021 18:29:21
-2021-06-04 18:29:21.674  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-04 18:29:21.675  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-04 18:29:21.677  INFO 10844 --- [   scheduling-1] r.m.p.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 2 milliseconds. Return: []
-2021-06-04 18:29:21.680  INFO 10844 --- [   scheduling-1] r.m.p.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 18:29:21.682  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 9 milliseconds.
-2021-06-04 18:29:41.891  WARN 10844 --- [l-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=59m55s480ms738µs200ns).
-2021-06-04 18:30:00.010  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task started at 04-06-2021 18:30:00
-2021-06-04 18:30:00.010  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-04 18:30:00.011  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-04 18:30:00.012  INFO 10844 --- [   scheduling-1] r.m.p.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 18:30:00.015  INFO 10844 --- [   scheduling-1] r.m.p.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 18:30:00.017  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 7 milliseconds.
-2021-06-04 18:31:00.015  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task started at 04-06-2021 18:31:00
-2021-06-04 18:31:00.016  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-04 18:31:00.017  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-04 18:31:00.018  INFO 10844 --- [   scheduling-1] r.m.p.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 18:31:00.020  INFO 10844 --- [   scheduling-1] r.m.p.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 18:31:00.022  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 7 milliseconds.
-2021-06-04 18:32:00.009  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task started at 04-06-2021 18:32:00
-2021-06-04 18:32:00.011  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-04 18:32:00.011  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-04 18:32:00.012  INFO 10844 --- [   scheduling-1] r.m.p.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 18:32:00.014  INFO 10844 --- [   scheduling-1] r.m.p.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 18:32:00.016  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 7 milliseconds.
-2021-06-04 18:33:00.010  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task started at 04-06-2021 18:33:00
-2021-06-04 18:33:00.011  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-04 18:33:00.011  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-04 18:33:00.012  INFO 10844 --- [   scheduling-1] r.m.p.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 18:33:00.015  INFO 10844 --- [   scheduling-1] r.m.p.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 18:33:00.016  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 6 milliseconds.
-2021-06-04 18:34:00.009  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task started at 04-06-2021 18:34:00
-2021-06-04 18:34:00.010  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-04 18:34:00.011  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-04 18:34:00.012  INFO 10844 --- [   scheduling-1] r.m.p.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 18:34:00.014  INFO 10844 --- [   scheduling-1] r.m.p.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 18:34:00.016  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 7 milliseconds.
-2021-06-04 18:35:00.001  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task started at 04-06-2021 18:35:00
-2021-06-04 18:35:00.002  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-04 18:35:00.003  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-04 18:35:00.004  INFO 10844 --- [   scheduling-1] r.m.p.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 18:35:00.007  INFO 10844 --- [   scheduling-1] r.m.p.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 18:35:00.008  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 7 milliseconds.
-2021-06-04 18:36:00.001  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task started at 04-06-2021 18:36:00
-2021-06-04 18:36:00.002  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-04 18:36:00.003  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-04 18:36:00.004  INFO 10844 --- [   scheduling-1] r.m.p.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 18:36:00.006  INFO 10844 --- [   scheduling-1] r.m.p.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 18:36:00.008  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 7 milliseconds.
-2021-06-04 18:37:00.009  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task started at 04-06-2021 18:37:00
-2021-06-04 18:37:00.010  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-04 18:37:00.011  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-04 18:37:00.012  INFO 10844 --- [   scheduling-1] r.m.p.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 18:37:00.015  INFO 10844 --- [   scheduling-1] r.m.p.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 0 milliseconds. Return: []
-2021-06-04 18:37:00.016  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 7 milliseconds.
-2021-06-04 18:38:00.015  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task started at 04-06-2021 18:38:00
-2021-06-04 18:38:00.015  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-04 18:38:00.016  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-04 18:38:00.017  INFO 10844 --- [   scheduling-1] r.m.p.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 18:38:00.019  INFO 10844 --- [   scheduling-1] r.m.p.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 18:38:00.021  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 6 milliseconds.
-2021-06-04 18:39:00.013  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task started at 04-06-2021 18:39:00
-2021-06-04 18:39:00.013  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-04 18:39:00.014  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-04 18:39:00.015  INFO 10844 --- [   scheduling-1] r.m.p.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 18:39:00.017  INFO 10844 --- [   scheduling-1] r.m.p.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 18:39:00.018  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 6 milliseconds.
-2021-06-04 18:40:00.006  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task started at 04-06-2021 18:40:00
-2021-06-04 18:40:00.008  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-04 18:40:00.008  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-04 18:40:00.009  INFO 10844 --- [   scheduling-1] r.m.p.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 18:40:00.011  INFO 10844 --- [   scheduling-1] r.m.p.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 18:40:00.013  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 7 milliseconds.
-2021-06-04 18:41:00.013  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task started at 04-06-2021 18:41:00
-2021-06-04 18:41:00.014  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File games.txt was deleted: true
-2021-06-04 18:41:00.015  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : File levels.txt was deleted: true
-2021-06-04 18:41:00.016  INFO 10844 --- [   scheduling-1] r.m.p.model.service.LevelServiceImpl     : Found all levels
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 18:41:00.018  INFO 10844 --- [   scheduling-1] r.m.p.model.service.GameServiceImpl      : Found all games
-Method: readAll. Time: 1 milliseconds. Return: []
-2021-06-04 18:41:00.019  INFO 10844 --- [   scheduling-1] r.m.p.model.service.SchedulerService     : SCHEDULED task finished.
-Method: schedule. Time: 6 milliseconds.
+2021-06-05 15:08:50.946  INFO 25452 --- [  restartedMain] r.m.p.Practice1425Application            : Starting Practice1425Application using Java 15.0.1 on DESKTOP-31L6BV3 with PID 25452 (C:\Users\light\OneDrive\Документы\GitHub\Java2\practice14_25\target\classes started by light in C:\Users\light\OneDrive\Документы\GitHub\Java2\practice14_25)
+2021-06-05 15:08:50.951  INFO 25452 --- [  restartedMain] r.m.p.Practice1425Application            : No active profile set, falling back to default profiles: default
+2021-06-05 15:08:51.007  INFO 25452 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-06-05 15:08:51.007  INFO 25452 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-06-05 15:08:51.019  WARN 25452 --- [kground-preinit] o.s.h.c.j.Jackson2ObjectMapperBuilder    : For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2021-06-05 15:08:51.834  INFO 25452 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-06-05 15:08:51.925  INFO 25452 --- [  restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 78 ms. Found 3 JPA repository interfaces.
+2021-06-05 15:08:52.816  INFO 25452 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-06-05 15:08:52.832  INFO 25452 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-06-05 15:08:52.832  INFO 25452 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2021-06-05 15:08:53.002  INFO 25452 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-06-05 15:08:53.002  INFO 25452 --- [  restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1993 ms
+2021-06-05 15:08:53.243  INFO 25452 --- [  restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-06-05 15:08:53.276  INFO 25452 --- [  restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.31.Final
+2021-06-05 15:08:53.446  INFO 25452 --- [  restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-06-05 15:08:53.544  INFO 25452 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-06-05 15:08:54.000  INFO 25452 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-06-05 15:08:54.021  INFO 25452 --- [  restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2021-06-05 15:08:54.738  INFO 25452 --- [  restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-06-05 15:08:54.756  INFO 25452 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-06-05 15:08:54.876  WARN 25452 --- [  restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-06-05 15:08:55.672  WARN 25452 --- [  restartedMain] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2021-06-05 15:08:55.984  INFO 25452 --- [  restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@716ba0e3, org.springframework.security.web.context.SecurityContextPersistenceFilter@647ad30f, org.springframework.security.web.header.HeaderWriterFilter@4f319f5b, org.springframework.security.web.csrf.CsrfFilter@2e6eb64e, org.springframework.security.web.authentication.logout.LogoutFilter@707d2115, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@9e2283c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@74ab2985, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79c73a50, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@465f9bd, org.springframework.security.web.session.SessionManagementFilter@397e468a, org.springframework.security.web.access.ExceptionTranslationFilter@da8eb35, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5aafbec0]
+2021-06-05 15:08:56.560  WARN 25452 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2021-06-05 15:08:56.622  WARN 25452 --- [  restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2021-06-05 15:08:56.625  INFO 25452 --- [  restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-06-05 15:08:56.629  INFO 25452 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-06-05 15:08:56.638  INFO 25452 --- [  restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-06-05 15:08:56.643  INFO 25452 --- [  restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-06-05 15:08:56.658  INFO 25452 --- [  restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-06-05 15:08:56.676 ERROR 25452 --- [  restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+

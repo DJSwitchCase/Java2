@@ -1,6 +1,6 @@
 public class Student {
-    private int score;
-    private String name;
+    private final int score;
+    private final String name;
 
     Student(int sc, String n)
     {
